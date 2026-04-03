@@ -11,7 +11,7 @@ function App() {
     setIsLoading(true);
     
     try {
-      const response = await fetch('/hf-api/models/stabilityai/stable-diffusion-xl-base-1.0', {
+      const response = await fetch('https://router.huggingface.co/hf-inference/models/stabilityai/stable-diffusion-xl-base-1.0', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
